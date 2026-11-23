@@ -100,13 +100,13 @@ Our team was engaged as Junior Cybersecurity Consultants. Rather than performing
 The target system was reached at `10.0.2.3` (**Figure 1**). A full port scan with service and version detection (`nmap -sV -p- 10.0.2.3`) identified **30 open TCP ports**, including cleartext remote access services (`Telnet`, `rexec`, `rlogin`, `rsh`), database servers (`MySQL 5.0.51a`, `PostgreSQL 8.3.0–8.3.7`), file sharing (`Samba`), web servers (`Apache 2.2.8`, `Tomcat`), and an exposed `bindshell` root shell on port `1524/tcp` (**Figures 2 and 3**).
 
 **Figure 1:** Target system (`Metasploitable 2`) showing its network address `10.0.2.3`
-![Figure 1 - Target Network Configuration](screenshots/01-fig1-target-network-10-0-2-3.png)
+![Figure 1 - Target Network Configuration](01-fig1-target-network-10-0-2-3.png)
 
 **Figure 2:** Nmap service and version detection results (`nmap -sV -p- 10.0.2.3`), part one
-![Figure 2 - Nmap Full Scan Part One](screenshots/02-fig2-nmap-scan-part-one.png)
+![Figure 2 - Nmap Full Scan Part One](02-fig2-nmap-scan-part-one.png)
 
 **Figure 3:** Nmap results, part two, completing the list of 30 open TCP services
-![Figure 3 - Nmap Full Scan Part Two](screenshots/03-fig3-nmap-scan-part-two-30-ports.png)
+![Figure 3 - Nmap Full Scan Part Two](03-fig3-nmap-scan-part-two-30-ports.png)
 
 ---
 
@@ -134,10 +134,10 @@ The target system was reached at `10.0.2.3` (**Figure 1**). A full port scan wit
 | **Risk Rating** | **Critical** (`CVSS v3.1: 9.8`) |
 
 **Figure 4:** Nmap confirms the `vsftpd 2.3.4` backdoor on port `21/tcp` and returns root-level access
-![Figure 4 - vsftpd 2.3.4 Backdoor Root Access](screenshots/04-fig4-vsftpd-backdoor-root.png)
+![Figure 4 - vsftpd 2.3.4 Backdoor Root Access](04-fig4-vsftpd-backdoor-root.png)
 
 **Figure 5:** Searchsploit shows public exploit code exists for `vsftpd 2.3.4`
-![Figure 5 - Searchsploit vsftpd 2.3.4](screenshots/05-fig5-searchsploit-vsftpd.png)
+![Figure 5 - Searchsploit vsftpd 2.3.4](05-fig5-searchsploit-vsftpd.png)
 
 ---
 
@@ -153,10 +153,10 @@ The target system was reached at `10.0.2.3` (**Figure 1**). A full port scan wit
 | **Risk Rating** | **Critical** (`CVSS v2: 7.5` — elevated to Critical due to planted backdoor) |
 
 **Figure 6:** Nmap detects a trojaned `UnrealIRCd` on port `6667/tcp` (bottom) and CCS Injection (top)
-![Figure 6 - CCS Injection and UnrealIRCd Backdoor](screenshots/06-fig6-ccs-injection-unrealircd.png)
+![Figure 6 - CCS Injection and UnrealIRCd Backdoor](06-fig6-ccs-injection-unrealircd.png)
 
 **Figure 7:** Searchsploit results for `distccd` and `UnrealIRCd`, including the backdoor command execution module
-![Figure 7 - Searchsploit distccd and UnrealIRCd](screenshots/07-fig7-searchsploit-distccd-unrealircd.png)
+![Figure 7 - Searchsploit distccd and UnrealIRCd](07-fig7-searchsploit-distccd-unrealircd.png)
 
 ---
 
@@ -172,7 +172,7 @@ The target system was reached at `10.0.2.3` (**Figure 1**). A full port scan wit
 | **Risk Rating** | **High** (`CVSS v2: 6.0` — rated High due to unauthenticated RCE exploitability) |
 
 **Figure 8:** Searchsploit shows several public exploits for `Samba 3.0.20`
-![Figure 8 - Searchsploit Samba 3.0.20](screenshots/08-fig8-searchsploit-samba.png)
+![Figure 8 - Searchsploit Samba 3.0.20](08-fig8-searchsploit-samba.png)
 
 ---
 
@@ -188,7 +188,7 @@ The target system was reached at `10.0.2.3` (**Figure 1**). A full port scan wit
 | **Risk Rating** | **Medium** (`CVSS v2: 5.0`) |
 
 **Figure 9:** Nmap confirms that anonymous FTP login is allowed on port `21/tcp`
-![Figure 9 - Anonymous FTP Login Allowed](screenshots/09-fig9-ftp-anon-login-allowed.png)
+![Figure 9 - Anonymous FTP Login Allowed](09-fig9-ftp-anon-login-allowed.png)
 
 ---
 
@@ -204,7 +204,7 @@ The target system was reached at `10.0.2.3` (**Figure 1**). A full port scan wit
 | **Risk Rating** | **High** (`CVSS v3: 7.4`) |
 
 **Figure 10:** Nmap flags RMI, POODLE, and SSL/TLS CCS Injection as `VULNERABLE` on PostgreSQL, port `5432/tcp`
-![Figure 10 - PostgreSQL POODLE and CCS Injection](screenshots/10-fig10-rmi-postgres-poodle-ccs.png)
+![Figure 10 - PostgreSQL POODLE and CCS Injection](10-fig10-rmi-postgres-poodle-ccs.png)
 
 ---
 
@@ -330,7 +330,6 @@ By containing the Critical backdoors within 7 days, remediating the High finding
 <div align="center">
 
 **Prepared by Group 53 — Hajime Cohort, TS Academy Cybersecurity Programme**  
-Salifu Isaiah &bull; Adeniyi Barakat Aderonke &bull; Ogundele Israel Oluwafemi &bull; Lilycent Orjikalu
+Salifu Isaiah &bull; Adeniyi Barakat Aderonke &bull;
 
 </div>
-
