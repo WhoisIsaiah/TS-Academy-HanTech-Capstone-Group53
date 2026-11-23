@@ -330,6 +330,6 @@ By containing the Critical backdoors within 7 days, remediating the High finding
 <div align="center">
 
 **Prepared by Group 53 — Hajime Cohort, TS Academy Cybersecurity Programme**  
-Salifu Isaiah &bull; Adeniyi Barakat Aderonke &bull;
+&bull; Salifu Isaiah &bull; 
 
 </div>
